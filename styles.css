@@ -110,9 +110,11 @@ p {
 .intro {
   margin-top: 100px;
   margin-bottom: 100px;
+/*
   border-radius: 52px;
-  padding: 52px;
+  padding: 80px 52px 80px 52px;
   box-shadow: 0px 16px 52px rgba(0, 0, 0, 0.15);
+*/
 }
 
 .hereweare {
@@ -171,7 +173,7 @@ p {
 .card {
   text-align: left;
   margin: auto;
-  margin-top: 128px;
+  margin-top: 188px;
   border-radius: 52px;
   overflow: hidden;
   max-width: 1336px;

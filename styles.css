@@ -140,9 +140,8 @@ p {
 .hello {
   font-family: 'Playfair Display', serif;
   font-size: 64px;
-  color: #000073;
   margin-bottom: 140px;
-  background-color: black;
+  background-color: #000073;
   color: white;
   width: 500px;
   height: 100px;
@@ -157,7 +156,7 @@ p {
 .hello A:hover {text-decoration: none;}
 
 .hello:hover {
-  background-color: #676772;		  
+  background-color: rgba(0, 0, 116, 0.69);		  
   box-shadow: 0px 16px 52px rgba(0, 0, 0, 0.15);
   text-decoration: none;
 }
@@ -393,7 +392,7 @@ p {
       color: #D6E4FF;
     }
 
-    .card, .intro  {
+    .card  {
       background-color: rgba(255, 255, 255, 0.1);
     }
 
@@ -414,12 +413,24 @@ p {
     A:link {text-decoration: none; color: #02E6A7;}
     A:visited {text-decoration: none; color: #02E6A7;}
     A:active {text-decoration: none; color: #02E6A7;}
-    A:hover {text-decoration: underline; color: #02E6A7;}
+    A:hover {text-decoration: none; color: #02E6A7;}
     a:focus {outline: 0;}
     	
     h1 {
       color: #D6E4FF;
     }
+
+
+.hello {
+  background-color: #D6E4FF;
+  color: black;
+}
+
+.hello:hover {
+  background-color: rgba(215, 228, 255, 0.65);		  
+  box-shadow: 0px 16px 52px rgba(0, 0, 0, 0.15);
+}
+
 
   .header, .logos {
    -webkit-filter: invert(1);

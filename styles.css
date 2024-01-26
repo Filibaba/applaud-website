@@ -209,6 +209,11 @@ p {
   padding-bottom: 32px;
 }
 
+.worked-with {
+  width: 40vw;
+  margin: auto;
+}
+
 .logos {
   margin-top: 52px;
   margin-bottom: 100px;
@@ -226,9 +231,9 @@ p {
 
 
 /* Laptop */
-@media (min-width: 1367px) and (max-width: 1600px){
+@media (min-width: 1367px) and (max-width: 1800px){
   p, .lookingforward {
-    width: 60vw;
+    width: 800px;
   }
 }
 
@@ -239,32 +244,14 @@ p {
   .card {
     border-radius: 32px;
   }
-/*
 
   body {
     font-family: "brandon-grotesque", sans-serif;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 300;
     font-style: normal;
     color: black;
   }
-  
-
-  
-  h3 {
-    font-size: 22px;
-  }
-  
-  .footnote {
-    font-size: 16px;
-    font-weight: 300;
-  }
-  
-  .name {
-    font-size: 22px;
-    font-weight: 500;  
-  }
-*/
 
   h1 {
     font-size: 40px;
@@ -275,7 +262,7 @@ p {
   }  
 
   p {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 300;
     line-height: 1.7;
     width: 90vw;
@@ -283,18 +270,39 @@ p {
     margin: auto;
   }
   
+  .name {
+    font-size: 22px;
+    font-weight: 500;  
+  }
+  
   .logo {
     display: block;
     width: 100%;
-    height: 176px;
-    margin-left: 100px;
-    margin-top: 160px;
-    margin-bottom: -40px;
+    height: 17px;
+    margin-left: 52px;
+    margin-top: 80px;
+    margin-bottom: 140px;
+    transform: translate(-48%, -60%);
+  }
+  
+  
+  .pink, .green {
+    width: 76px;
+    height: 76px;
   }
 
   .wordmark {
-    display: none;
+    width: 345px;
+    height: 54px;
+    transform: translate(-25%, -40%);
   }
+  
+  
+
+  
+  
+  
+  
   
   .lookingforward {
     margin-top: 0;
@@ -341,6 +349,25 @@ p {
     text-decoration: none;
   }  
 
+  
+  .card-margins {
+    margin-top: 0px;
+    margin-left: 52px;
+    margin-right: 52px;
+    margin-bottom: 64px;
+  }
+  
+  .card {
+    text-align: left;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 52px;
+    overflow: hidden;
+    max-width: 1336px;
+    min-height: 300px;
+    box-shadow: 0px 16px 52px rgba(0, 0, 0, 0.15);
+  }
+
   .card h2 {
     padding: 0px 32px 0px 32px;
   }
@@ -350,12 +377,14 @@ p {
   }
   
   .card p {
-    padding: 0px 32px 48px 32px;
+    padding: 0px 32px 56px 32px;
     width: auto;
   }
 
   .worked-with {
     margin: 128px 16px 0px 16px;
+    width: 60vw;
+    margin: auto;
   }
   
 }
@@ -531,6 +560,8 @@ p {
   .worked-with {
     margin: 64px 16px 0px 16px;
     font-size: 17px;
+    width: 90vw;
+    margin: auto;
   }
 
   .copyright {
@@ -594,6 +625,34 @@ p {
   100% {
     transform: translate(-24px,24px);
   }  
+}
+
+/* Tablet margins */
+@media (min-width: 415px) and (max-width: 1366px){
+
+    @keyframes pink {
+      0% {
+        transform: translate(0px,0px);
+      }
+      50% {
+        transform: translate(-12px,12px);
+      }
+      100% {
+        transform: translate(0px,0px);
+      }  
+    }
+    
+    @keyframes green  {
+      0% {
+        transform: translate(-12px,12px);
+      }
+      50% {
+        transform: translate(0px,0px);
+      }
+      100% {
+        transform: translate(-12px,12px);
+      }  
+    }
 }
 
 @media (prefers-color-scheme: dark) {

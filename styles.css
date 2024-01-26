@@ -210,7 +210,7 @@ p {
 }
 
 .worked-with {
-  width: 40vw;
+  width: 60vw;
   margin: auto;
 }
 
@@ -232,15 +232,15 @@ p {
 
 /* Laptop */
 @media (min-width: 1367px) and (max-width: 1800px){
-  p, .lookingforward {
-    width: 800px;
+  p, .lookingforward, .worked-with {
+    width: 1000px;
   }
 }
 
 
 
 /* Tablet margins */
-@media (min-width: 415px) and (max-width: 1366px){
+@media (min-width: 568px) and (max-width: 1366px){
   .card {
     border-radius: 32px;
   }
@@ -285,7 +285,6 @@ p {
     transform: translate(-48%, -60%);
   }
   
-  
   .pink, .green {
     width: 76px;
     height: 76px;
@@ -296,13 +295,6 @@ p {
     height: 54px;
     transform: translate(-25%, -40%);
   }
-  
-  
-
-  
-  
-  
-  
   
   .lookingforward {
     margin-top: 0;
@@ -390,7 +382,7 @@ p {
 }
 
 /* Tablet margins */
-@media (min-width: 415px) and (max-width: 834px){
+@media (min-width: 568px) and (max-width: 834px){
   .card-margins {
     margin-left: 32px;
     margin-right: 32px;
@@ -434,7 +426,7 @@ p {
 
 
 /* Phone adaptations */
-@media (max-width: 414px) {
+@media (max-width: 567px) {
   
   body {
     font-family: "brandon-grotesque", sans-serif;
@@ -479,7 +471,7 @@ p {
     display: block;
     width: 100%;
     height: 176px;
-    margin-left: 100px;
+    margin-left: 32vw;
     margin-top: 160px;
     margin-bottom: -40px;
   }
@@ -534,11 +526,11 @@ p {
   }
   
   .card-margins {
-    margin: 32px 16px 32px 16px;
+    margin: 96px 16px 32px 16px;
   }
   
   .card {
-    margin-top: 32px;
+    margin-top: 64px;
     border-radius: 24px;
     min-height: 384px;
     box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.15);
@@ -558,10 +550,9 @@ p {
   }
   
   .worked-with {
-    margin: 64px 16px 0px 16px;
-    font-size: 17px;
+    margin: 96px auto 0px auto;
+    font-size: 24px;
     width: 90vw;
-    margin: auto;
   }
 
   .copyright {
@@ -628,7 +619,7 @@ p {
 }
 
 /* Tablet margins */
-@media (min-width: 415px) and (max-width: 1366px){
+@media (min-width: 568px) and (max-width: 1366px){
 
     @keyframes pink {
       0% {

@@ -17,18 +17,18 @@ A:hover {text-decoration: none; color: black;}
 a:focus {outline: 0;}
 	
 h1 {
-    font-family: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
+  font-family: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
   font-size: 64px;
   color: #000073;
 }
 
 h2 {
-    font-family: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
+  font-family: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
   font-size: 48px;
 }
 
 h3 {
-    font-family: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
+  font-family: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
   font-size: 22px;
 }
 
@@ -141,12 +141,12 @@ p {
 .hello {
   font-family: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
   font-weight: 800;
-  font-size: 64px;
+  font-size: 48px;
   margin-bottom: 140px;
   background-color: #000073;
   color: white;
   width: 500px;
-  height: 92px;
+  height: 72px;
   border-radius: 100px;
   margin: auto;
   padding-top: 12px;
@@ -516,10 +516,10 @@ p {
   }
   
   .hello {
-    font-size: 32px;
+    font-size: 24px;
     margin-bottom: 140px;
     width: 90vw;
-    height: 56px;
+    height: 46px;
     border-radius: 100px;
     margin: auto;
     padding-top: 16px;

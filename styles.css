@@ -274,7 +274,7 @@ p {
   
   .name {
     font-size: 22px;
-    font-weight: 500;  
+    font-weight: 600;  
   }
   
   .logo {
@@ -335,7 +335,7 @@ p {
     height: 56px;
     border-radius: 100px;
     margin: auto;
-    padding-top: 6px;
+    padding-top: 12px;
     box-shadow:0 4px 16px rgba(0, 0, 0, 0.16); 
   }
   
@@ -465,11 +465,6 @@ p {
     font-weight: 300;
   }
   
-  .name {
-    font-size: 22px;
-    font-weight: 500;  
-  }
-  
   p {
     font-size: 19px;
     font-weight: 300;
@@ -527,7 +522,7 @@ p {
     height: 56px;
     border-radius: 100px;
     margin: auto;
-    padding-top: 6px;
+    padding-top: 16px;
     box-shadow:0 4px 16px rgba(0, 0, 0, 0.16); 
   }
   

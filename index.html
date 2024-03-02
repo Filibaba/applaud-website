@@ -13,6 +13,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    
+<div class="site-nav">
+  <div class="site-nav-left">
+<!--     <img src="gfx/favicon.png" width="40" height="40" alt="Applaud Studio logo"> -->
+    <div class="logo-animation-small">
+      <img src="gfx/green.png" class="green-small" width="32" height="32">
+      <img src="gfx/pink.png" class="pink-small" width="32" height="32">
+    </div>
+  </div>
+  <div class="site-nav-right">
+    <a href="#About" class="site-nav-regular">About</a>
+    <a href="#OurWork" class="site-nav-regular">Our&nbspWork</a>
+    <a href="https://blog.applaudstud.io" class="site-nav-regular">Blog</a>
+    <a href="mailto:hello@applaudstud.io?subject=Hello Applaud" class="hello">Say&nbspHello</a>
+  </div>
+</div>
+
 
 <div class="logo">
   <div class="logo-animation">
@@ -26,8 +43,7 @@
   </picture>
 </div>
 
-
-<h1 class="lookingforward">Your one-stop shop for beautiful, user-friendly apps, crafted with care.<br></h1>
+<h1 id="About" class="tagline">Your one-stop shop for beautiful, user-friendly apps, crafted with care.<br></h1>
 
   <p class="intro">At Applaud, we specialize in crafting visually stunning apps using cutting-edge tools, always with the customer at the forefront of our focus.<br><br>Our expertise lies in Apple platforms, including iOS, iPadOS, watchOS, and visionOS. We leverage Swift, SwiftUI, and The Composable Architecture to develop robust solutions tailored to your needs.<br><br>When it comes to design, we utilize a range of tools such as Figma, Sketch, Photoshop, Cinema 4D, and Principle. Proficient in design systems, we craft them alongside your project, ensuring seamless integration. With a deep understanding of Apple’s HIG and Google’s Material Design, our designs feel native on both iOS and Android platforms.<br><br>Projects with us can span anywhere from a week to five years. Whether you’re starting from scratch or need targeted enhancements, we’re here to guide you through the journey. We thrive on projects that drive positive change, leaving a lasting impact on the world.<br><br>Operating remotely first, we’re available for in-person meetings in Stockholm or Gothenburg, Sweden. Feel free to drop by our Stockholm office for a coffee and a chat!</p>
 
@@ -46,9 +62,28 @@
       </div>
     </div>
 
+    <h2 class="fromtheblog">From the Blog</h2>
+       <div class="blog-cards">  
+<!--
+         <a href="https://blog.applaudstud.io/thoughtful-apps-have-a-story-and-a-launch-trailer/">  
+          <div class="blog-card">
+              <img src="gfx/blog-buttons.jpg" width="100%" height="auto" alt="Tomat">
+              <h3>Sometimes, a Button Just Wants to Look Like a Button</h3>
+              <p>How much was really lost in the great calamity that was iOS 7? For a UI designer like myself, quite a lot. I wandered around aimlessly for some time before finding my footing again. There was something so tangible with using real world …</p>
+          </div>
+         </a>
+-->
+         <a href="https://blog.applaudstud.io/thoughtful-apps-have-a-story-and-a-launch-trailer/">  
+          <div class="blog-card">
+              <img src="gfx/blog-tomat.jpg" width="100%" height="auto" alt="Tomat">
+              <h3>Thoughtful Apps Need a Story (And a Launch Trailer)</h3>
+              <p>With so much of app development and user interface design being standardized with declarative programming, design systems and UI kits, things start to look the same and it’s becoming harder to stand out …</p>
+          </div>
+           <div id="OurWork"></div>
+         </a>
+    </div>   
 
-  <a href="mailto:hello@applaudstud.io?subject=Hello Applaud"><div class="hello">Say Hello</div></a>
-  
+    <h2 class="fromtheblog">Our Work</h2>
     <div class="card-margins">
     	<div class="card">
         <video class="video light-video" width="100%" height="auto" autoplay loop playsinline controls muted>
@@ -173,22 +208,39 @@
   	<h2 class="worked-with">Some of the companies we&#146;ve had the pleasure of working with:</h2>
   	<img src="gfx/logos.svg" alt="Apple, KDDI, Spotify, Swedish Railways, SEB, Perigee, Sony, Electrolux, Nokia, Skype, Motorola, Ericsson, Huawei" class="logos">
 
-  <a href="mailto:hello@applaudstud.io?subject=Hello Applaud"><div class="hello">Say Hello</div></a>
+<!--   <a href="mailto:hello@applaudstud.io?subject=Hello Applaud"><div class="hello">Say Hello</div></a> -->
 
-      <h2 class="fromtheblog">From the blog</h2>
-         <div class="blog-cards">  
-           <a href="https://blog.applaudstud.io/thoughtful-apps-have-a-story-and-a-launch-trailer/">  
-            <div class="blog-card">
-                <img src="gfx/blog-tomat.jpg" width="100%" height="auto" alt="Tomat">
-                <h3>Thoughtful Apps Need a Story (And a Launch Trailer)</h3>
-                <p>With so much of app development and user interface design being standardized with declarative programming, design systems and UI kits, things start to look the same and it’s becoming harder to stand out …</p>
-            </div>
-           </a>
-      </div>   
 
-  	<p class="copyright">
-          <script>document.write(new Date().getFullYear());</script> &copy; Applaud Studio
-    </p>
+    <footer>
+      <div>
+        <svg class="bend" width="1440px" height="51px" viewBox="0 0 1440 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Artboard" transform="translate(0.000000, -2.000000)" fill="#fff">
+                    <path d="M1440,4 C1200.33169,36.6666667 960.331692,53 720,53 C479.668308,53 239.668308,36.6666667 0,4 L0,2 L1440,2 L1440,4 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </svg>
+      </div>      
+      
+      <div class="social-footer invertInDarkMode">
+				<a href="mailto:hello@applaudstud.io?subject=Hello Applaud"><img src="gfx/socialEmail.svg" alt="Email" width="24" height="24"></a>
+				<a href="https://mastodon.social/@applaud"><img src="gfx/socialDon.svg" alt="Mastodon" width="24" height="24"></a>
+				<a href="https://www.threads.net/@applaudstud.io"><img src="gfx/socialThreads.svg" alt="Threads" width="24" height="24"></a>
+				<a href="https://twitter.com/applaudstudio"><img src="gfx/socialTwitter.svg" alt="Instagram" width="24" height="24"></a>
+				<a href="https://www.linkedin.com/company/applaud-studio/"><img src="gfx/socialLinkedIn.svg" alt="LinkedIn" width="24" height="24"></a>
+      </div>       
+        
+    	<div class="copyright-notice">
+      	<p>
+              <script>document.write(new Date().getFullYear());</script> &copy; Applaud Studio
+        </p>
+        <p>
+          Apple, the Apple logo, iPad, Apple Vision Pro and iPhone are trademarks of Apple Inc. App Store is a service mark of Apple Inc.
+        </p>
+    	</div>
 
+    </footer>
+
+    
   </body>
 </html>

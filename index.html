@@ -62,25 +62,9 @@
       </div>
     </div>
 
-    <h2 class="fromtheblog">From the Blog</h2>
-       <div class="blog-cards">  
-
-         <a href="https://blog.applaudstud.io/s/">  
-          <div class="blog-card">
-              <img src="gfx/blog-buttons.jpg" width="100%" height="auto" alt="Tomat">
-              <h3>Sometimes, a Button Just Wants to Look Like a Button</h3>
-              <p>How much was really lost in the great calamity that was iOS 7? For a UI designer like myself, quite a lot. I wandered around aimlessly for some time before finding my footing again. There was something so tangible with using real world …</p>
-          </div>
-         </a>
-
-         <a href="https://blog.applaudstud.io/thoughtful-apps-have-a-story-and-a-launch-trailer/">  
-          <div class="blog-card">
-              <img src="gfx/blog-tomat.jpg" width="100%" height="auto" alt="Tomat">
-              <h3>Thoughtful Apps Need a Story (And a Launch Trailer)</h3>
-              <p>With so much of app development and user interface design being standardized with declarative programming, design systems and UI kits, things start to look the same and it’s becoming harder to stand out …</p>
-          </div>
-           <div id="OurWork"></div>
-         </a>
+    <a href="https://blog.applaudstud.io/"><h2 class="fromtheblog">From the Blog →</h2></a>
+       <div class="blog-cards" id="blog-post">  
+       </div>
     </div>   
 
     <h2 class="fromtheblog">Our Work</h2>
@@ -240,7 +224,25 @@
     	</div>
 
     </footer>
-
+    <script>
+        fetch('https://applaud.ghost.io/ghost/api/content/posts/?key=f1ed6874c3cb55487051df45f5&fields=title,url,excerpt,feature_image&limit=3')
+        .then(response => response.json())
+        .then(result => {
+          let posts = result['posts']
+          let postHTML = ''
+          for (var i = 0; i < posts.length; i++) {
+            postHTML +=  
+          `<a href="${posts[i].url}">  
+            <div class="blog-card">
+            <img src="${posts[i].feature_image}" width="100%" height="auto">
+            <h3>${posts[i].title}</h3>
+            <p>${posts[i].excerpt}</p>
+          </div>
+          </a>`
+          }
+          document.getElementById('blog-post').innerHTML = postHTML
+        })
+    </script> 
     
   </body>
 </html>

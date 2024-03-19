@@ -138,16 +138,6 @@ a:focus {outline: 0;}
   }
 }
 
-
-
-
-
-
-
-
-
-
-	
 h1 {
   font-family: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
   font-size: 64px;
@@ -296,7 +286,6 @@ p {
 .fromtheblog {
   margin-top: 64px;
   padding-top: 32px;
-/*   border-top: 8px solid rgba(0, 0, 0, 0.04); */
 }
 
 .blog-cards {
@@ -428,6 +417,8 @@ footer {
 }
 
 .copyright-notice, .copyright-notice p {
+  font: -apple-system-footnote;
+  font-size: 11px;
   width: auto;
   text-align: center;
   margin-left: 16px;
@@ -609,16 +600,13 @@ footer {
     transform: translate(-50vw, -60%);
   }
   
-  .card {
-    border-radius: 32px;
-  }
-  
   .link-buttons {
     margin-top: 32px;  
     margin-bottom: 0;
   }
   
   .card {
+    border-radius: 32px;
     margin-top: 52px;
   }  
   
@@ -649,6 +637,13 @@ footer {
 
 /* Phone adaptations */
 @media (max-width: 567px) {
+  
+  .fromtheblog {
+    margin-top: 32px;
+    padding-top: 16px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
   
   body {
     font-size: 16px;
@@ -704,11 +699,15 @@ footer {
   }
   
   .card-margins {
-    margin: 96px 16px 32px 16px;
+    margin: 64px 16px 32px 16px;
+  }
+  
+  .negativepadding {
+    margin-bottom: -48px;
   }
   
   .card {
-    margin-top: 64px;
+    margin-top: 32px;
     border-radius: 20px;
     min-height: 384px;
     box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.15);
@@ -722,8 +721,13 @@ footer {
     padding-bottom: 8px;
   }
   
-  .card p, .blog-card {
+  .card p {
     padding: 0px 16px 32px 16px;
+    width: auto;
+  }
+  
+  .blog-card {
+    padding: 16px 16px 32px 16px;
     width: auto;
   }
   

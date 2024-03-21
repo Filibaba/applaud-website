@@ -259,6 +259,7 @@ p {
 }
 
 .intro {
+  font-size: 24px;
   margin-top: 64px;
   margin-bottom: 64px;
 }
@@ -473,6 +474,7 @@ footer {
   }
   
   .intro {
+    font-size: 21px;
     margin-top: 48px;
     margin-bottom: 48px;
   }
@@ -679,6 +681,7 @@ footer {
   }
   
   .intro {
+    font-size: 19px;
     margin-top: 48px;
     margin-bottom: 48px;
   }
